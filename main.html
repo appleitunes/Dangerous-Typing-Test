@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>The Most Dangerous Typing Test</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="main.css">
+        <script src="main.js"></script>
+        <link rel="icon" type="image/png" href="logo.png">
+    </head>
+    <body>
+        <div id="container">
+            <div id="menu_area" class="child">
+                <h1>The World's Most <span class="emphasis">Dangerous</span> Typing Test</h1>
+                <h4>Don’t stop typing, or all progress will be lost.</h4>
+                <br><br>
+                <button onclick="startTyping()" class="blue_button">Start Typing</button>
+                <br><br>
+                <p id="message">You failed. <a href="javascript:startTyping()">Try again?</a></p>
+            </div>
+            <div id="content_area" class="child">
+                <h3>Time remaining: <span id="count_down">0:00</span></h3>
+                <div id="warning_context"><span id="warning"></span> seconds until failure</div>
+                <br><br>
+                <textarea id="text_area" placeholder="Start typing to begin..."></textarea>                
+                <br><br>
+                <button onclick="stopTyping()" class="gray_button">Back</button>
+                <button onclick="finish()" class="red_button" id="stop_button">Stop</button>
+                <button onclick="download()" class="blue_button">Save</button>
+            </div>
+        </div>
+    </body>
+</html>
